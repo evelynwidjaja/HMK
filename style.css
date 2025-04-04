@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ======================= HEADER ======================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-160deg, #003366, #800000);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 4px 30px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .Logo {
+    position: relative;
+    left: -7px;
+    width: 8%;
+    filter: brightness(1.2);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size:18px;
+    letter-spacing: 1PX;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px); 
+    background: transparent; 
+    border: none;
+    transition: opacity 0.3s ease, transform 0.4s ease, visibility 0.3s;
+}
+
+.dropdown-menu li {
+    margin-bottom: 7px;
+}
+
+.dropdown-menu li a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 6px 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(-160deg, #003366, #800000);
+    border-radius: 50px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+    background: rgba(255, 255, 255, 0.894);
+    color: #003366;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); 
+}
+
+.registrasi {
+    border: #ffffff solid 1.3px;
+    padding: 7px 14px;
+    border-radius: 20px;
+}
+
+.registrasi:hover {
+    background: linear-gradient(-160deg, #003366, #800000);
+}
+
+/* ======================= MAIN ======================= */
+
+main {
+    text-align: center;
+}
+
+#title {
+    position: relative;
+    margin-top: 7rem;
+}
+
+#title img {
+    margin: 0 auto;
+    width: 75%;
+    height: 350px;
+    border-radius: 2px;
+    filter: brightness(1.2);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+#title h1 {
+    position: absolute;
+    padding: 8px 25px;
+    top: 50%;           
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    color: white;
+    letter-spacing: 1px;
+    font-size: 7.5rem;     
+    font-weight: bold;
+}
+
+/* ======================= VISION MISSION ======================= */
+
+#vm{
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.visionmission {
+    display: flex;
+    gap: 100px;
+    max-width: 700px;
+    margin-top: 5rem;
+    cursor: default;
+}
+
+.visionmission div {
+    align-items: center;
+    color: white;
+    background: linear-gradient(-160deg, #003366, #800000);
+    backdrop-filter: brightness(1.9);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s ;
+}
+
+.visionmission div h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.visionmission div p {
+    margin-bottom: 10px;
+}
+
+.visionmission div:hover {
+    background: linear-gradient(-160deg, rgb(128, 0, 0),  rgb(0, 51, 102));
+    filter: brightness(1.2) contrast(2);
+    transform: translateY(-5px);
+}
+
+/* ======================= INTRODUCTION ======================= */
+
+#videoperkenalan {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+video {
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 45px;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* ======================= PENGURUS INTI ======================= */
+
+#pengurusinti {
+    text-align: center;
+    margin: 50px auto;
+    width: 70%;
+}
+
+#pengurusinti h2 {
+    margin-top: 6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.pengurus-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));    
+    gap: 60px;
+    justify-items: center;
+}
+
+.pengurus-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pengurus-container .Nama {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* ======================= HISTORY ======================= */
+
+.History {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.History-container {
+    margin-top: 1.2rem;
+    position: relative;
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.History-container img {
+    width: 100%;
+    height: 350px;
+    border-radius: 1px;
+    filter: brightness(1.2);
+    transition: transform 0.4s;
+}
+
+.History-container:hover img {
+    transform: scale(1.1);
+}
+
+.History-container:hover .layer {
+    height: 100%;
+    opacity: 1;
+}
+
+.History h1 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.History p {
+    margin: 15px auto;
+    max-width: 600px;
+    color: white;;
+}
+
+.History .SeeMoreBtn {
+    padding: 10px 20px;
+    background: linear-gradient(-160deg, #003366, #800000);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.History .SeeMoreBtn:hover {
+    background: linear-gradient(-160deg, rgb(128, 0, 0),  rgb(0, 51, 102));
+    transform: translateY(-3px);
+}
+
+.layer {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(-160deg, rgb(128, 0, 0,0.3),  rgb(0, 51, 102,0.3));
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* ======================= SURVEY ======================= */
+
+.survey-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(-160deg, #003366, #800000);
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.survey-button img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.survey-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(-160deg, rgb(128, 0, 0),  rgb(0, 51, 102));
+}
