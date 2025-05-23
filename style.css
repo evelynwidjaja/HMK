@@ -38,17 +38,17 @@ header .Logo {
     filter: brightness(1.2);
 }
 
-header ul {
+.nav-links ul {
     display: flex;
     list-style: none;
     gap: 100px;
 }
 
-nav ul li {
+.nav-links ul li {
     position: relative;
 }
 
-header ul li a {
+.nav-links ul li a {
     text-decoration: none;
     font-size:18px;
     letter-spacing: 1PX;
@@ -107,6 +107,13 @@ header ul li a {
 
 .registrasi:hover {
     background: linear-gradient(-160deg, #003366, #800000);
+}
+
+.hamburger {
+    font-size: 28px;      
+    cursor: pointer;
+    color: white;
+    display: none;
 }
 
 /* ======================= MAIN ======================= */
@@ -383,7 +390,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-  }
+} 
 
 footer .information {
     display: grid;
@@ -409,4 +416,49 @@ footer img {
     margin-top: 20px;
     width: 20%;
     height: auto;
+}
+
+/* ======================= RESPONSIVE ======================= */
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .hamburger {
+        display: block;
+        position: static;
+        top: 15px;
+        right: 30px;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(-160deg, #003366, #800000);
+        margin-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        padding: 10px 20px;
+    }
+
+    header .Logo {
+        width: 15%;
+    }
 }
