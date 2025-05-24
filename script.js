@@ -1,13 +1,20 @@
 function togglePlay() {
-    var video = document.querySelector("#videoperkenalan video");
-    var button = document.querySelector(".play-button");
+  const video = document.getElementById("myVideo");
+  const playButton = document.querySelector(".play-button");
+  const icon = playButton.querySelector("i");
 
-    if (video.paused) {
-        video.play();
-    } else {
-        video.pause();
-    }
+  if (video.paused) {
+    video.play();
+    playButton.style.display = "none"; 
+    icon.classList.replace("fa-play", "fa-pause");
+  } else {
+    video.pause();
+    playButton.style.display = "flex"; 
+    icon.classList.replace("fa-pause", "fa-play");
+  }
 }
+
+
 
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
