@@ -3,146 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <script src="script.js" defer></script>
+
 </head>
+
 <body>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <nav>
+      <div class="logoHome">
+        <a href="index.html">
+          <img src="HMK'slogo.png" alt="HMK'slogo" class="Logo">
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
 
-<!-- ======================= HEADER ======================= -->
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li class="dropdown">
+            <a href="#Divisi">DIVISI</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">MEDKOM</a></li>
+              <li><a href="#">HUMAS</a></li>
+              <li><a href="#">PEMROGRAMAN</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#Event">EVENT</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">GALLERY</a></li>
+              <li><a href="#">COMING SOON</a></li>
+            </ul>
+          </li>
+          <li><a class="registrasi" href="#Registrasi">REGISTRASI</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <header>
-            <nav>
-                <div class="logoHome">
-                    <a href="index.html">
-                        <img src="HMK'slogo.png" alt="HMK'slogo" class="Logo">
-                    </a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    &#9776; 
-                </div>
-            
-                <div class="nav-links" id="navlinks">
-                    <ul>
-                        <li class="dropdown">
-                            <a href="#Divisi">DIVISI</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">MEDKOM</a></li>
-                                <li><a href="#">HUMAS</a></li>
-                                <li><a href="#">PEMROGRAMAN</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#Event">EVENT</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">GALLERY</a></li>
-                                <li><a href="#">COMING SOON</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="registrasi" href="#Registrasi">REGISTRASI</a></li>
-                    </ul>
-                </div>
-            </nav>
-    </header>
-
-<!-- ======================= MAIN ======================= -->
-    <main>
-
+  <!-- ======================= MAIN ======================= -->
+  <main>
     <!-- ======================= TITLE ======================= -->
-        
-        <section id="title">
-            <img src="behindtitle.jpg" alt="">
-            <h1>JUDUL</h1>
-        </section>
+    <section id="hero-section">
+        <div class="hero">
+            <img src="behindtitle.jpg" alt="Header Background">
+            <h1 class="hero-text">JUDUL</h1>
+        </div>
+    </section>
 
     <!-- ======================= VISION MISSION ======================= -->
-
-        <section id="vm">
-                <div class="visionmission">
-                    <div>
-                        <h2>VISION</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis totam molestiae quaerat repudiandae. Recusandae neque, dolor reiciendis qui officia nostrum, nesciunt repellendus architecto quis necessitatibus sed vero dignissimos tenetur!</p>
-                    </div>
-                    <div>
-                        <h2>MISSION</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis totam molestiae quaerat repudiandae. Recusandae neque, dolor reiciendis qui officia nostrum, nesciunt repellendus architecto quis necessitatibus sed vero dignissimos tenetur!</p>
-                    </div>
-                </div>        
-        </section>
+    <section id="vm">
+      <div class="visionmission">
+        <div>
+          <h2>VISION</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            perspiciatis totam molestiae quaerat repudiandae. Recusandae neque,
+            dolor reiciendis qui officia nostrum, nesciunt repellendus
+            architecto quis necessitatibus sed vero dignissimos tenetur!
+          </p>
+        </div>
+        <div>
+          <h2>MISSION</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+            perspiciatis totam molestiae quaerat repudiandae. Recusandae neque,
+            dolor reiciendis qui officia nostrum, nesciunt repellendus
+            architecto quis necessitatibus sed vero dignissimos tenetur!
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- ======================= INTRODUCTION ======================= -->
+    <section id="Perkenalan">
+      <div id="videoperkenalan">
+        <video id="myVideo" src="videoperkenalan.mp4" controls></video>
+        <button class="play-button" onclick="togglePlay()">▶</button>
+      </div>
 
-        <section id="Perkenalan">
-            <div id="videoperkenalan">
-                <video id="myVideo" src="videoperkenalan.mp4" controls></video>           
-                <button class="play-button" onclick="togglePlay()">▶</button> 
-            </div>
-
-            <div id="pengurusinti">
-                <h2>PENGURUS INTI</h2>
-                <div class="pengurus-container">
-                    <div>
-                        <img src="behindtitle.jpg" alt="">
-                        <p class="Nama">Nama</p>
-                        <p class="Jabatan">Jabatan</p>
-                    </div>
-                    <div>
-                        <img src="behindtitle.jpg" alt="">
-                        <p class="Nama">Nama</p>
-                        <p class="Jabatan">Jabatan</p>
-                    </div>
-                    <div>
-                        <img src="behindtitle.jpg" alt="">
-                        <p class="Nama">Nama</p>
-                        <p class="Jabatan">Jabatan</p>
-                    </div>
-                    <div>
-                        <img src="behindtitle.jpg" alt="">
-                        <p class="Nama">Nama</p>
-                        <p class="Jabatan">Jabatan</p>                    </div>
-                    <div>
-                        <img src="behindtitle.jpg" alt="">
-                        <p class="Nama">Nama</p>
-                        <p class="Jabatan">Jabatan</p>                    </div>
-                    <div>
-                        <img src="behindtitle.jpg" alt="">
-                        <p class="Nama">Nama</p>
-                        <p class="Jabatan">Jabatan</p>                    </div>
-                </div>
-            </div>
-        </section>
+      <div id="pengurusinti">
+        <h2>PENGURUS INTI</h2>
+        <div class="pengurus-container">
+          <div>
+            <img src="behindtitle.jpg" alt="Pengurus Inti 1">
+            <p class="Nama">Nama</p>
+            <p class="Jabatan">Jabatan</p>
+          </div>
+          <div>
+            <img src="behindtitle.jpg" alt="Pengurus Inti 2">
+            <p class="Nama">Nama</p>
+            <p class="Jabatan">Jabatan</p>
+          </div>
+          <div>
+            <img src="behindtitle.jpg" alt="Pengurus Inti 3">
+            <p class="Nama">Nama</p>
+            <p class="Jabatan">Jabatan</p>
+          </div>
+          <div>
+            <img src="behindtitle.jpg" alt="Pengurus Inti 4">
+            <p class="Nama">Nama</p>
+            <p class="Jabatan">Jabatan</p>
+          </div>
+          <div>
+            <img src="behindtitle.jpg" alt="Pengurus Inti 5">
+            <p class="Nama">Nama</p>
+            <p class="Jabatan">Jabatan</p>
+          </div>
+          <div>
+            <img src="behindtitle.jpg" alt="Pengurus Inti 6">
+            <p class="Nama">Nama</p>
+            <p class="Jabatan">Jabatan</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======================= HISTORY ======================= -->
-
-        <section class="History">
-            <h1>HMK's HISTORY</h1>
-            <div class="History-container">
-                <img src="behindtitle.jpg">
-                <div class="layer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tempore incidunt. Perferendis repellat esse assumenda voluptatibus commodi doloremque? Ipsum doloremque incidunt molestias eos amet aliquid id iure placeat fuga recusandae.</p>
-                    <a href="#" class="SeeMoreBtn">See more</a>        
-                </div>
-            </div>
-        </section>
-    </main>
-
-<!-- ======================= FOOTER ======================= -->
-
-    <footer>
-        <img src="ibbi.png" alt="">
-        <div class="information">
-            <p><i class="fas fa-envelope"></i> hmk@email.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> Jalan Sei Deli No.18 Medan </p>
-            <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
-            <p><i class="fa-brands fa-instagram"></i> hmk.ibbi </p>
+    <section class="History">
+      <h1>HMK's HISTORY</h1>
+      <div class="History-container">
+        <img src="behindtitle.jpg" alt="History Image">
+        <div class="layer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+            tempore incidunt. Perferendis repellat esse assumenda voluptatibus
+            commodi doloremque? Ipsum doloremque incidunt molestias eos amet
+            aliquid id iure placeat fuga recusandae.
+          </p>
+          <a href="#" class="SeeMoreBtn">See more</a>
         </div>
-        <p class="copyright">&copy; HMK IBBI University Copyright</p>         
-    </footer>
+      </div>
+    </section>
+  </main>
 
-<!-- ======================= SURVERY ======================= -->
-    
-    <a href="" target="_blank" class="survey-button"><img src="survey.png" alt=""></a>
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <img src="ibbi.png" alt="IBBI Logo">
+    <div class="information">
+      <p><i class="fas fa-envelope"></i> hmk@email.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Jalan Sei Deli No.18 Medan</p>
+      <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+      <p><i class="fab fa-instagram"></i> hmk.ibbi</p>
+    </div>
+    <p class="copyright">&copy; HMK IBBI University Copyright</p>
+  </footer>
+
+  <!-- ======================= SURVEY ======================= -->
+  <a href="" target="_blank" class="survey-button">
+    <img src="survey.png" alt="Survey">
+  </a>
 </body>
 </html>
-
